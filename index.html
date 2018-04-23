@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8"/>
+        <title>Trees!!!</title>
+        <script src="lib/three.js"></script>
+        <script src="lib/three.meshline.js"></script>
+    </head>
+    <body>
+        <table>
+            <tr>
+        <div>
+            Min Angle: <input id="textBoxMinAngle" type="number" value="5"/>
+            <br/>
+            Max Angle <input id="textBoxMaxAngle" type="number" value="120" />
+            <br/>
+            Max Branches <input id="textBoxMaxBranches" type="number" value="5" />
+            <br/>
+            <input onclick="generateTreeButtonPress()" type="button" value="Generate Tree" />
+        </div>
+    </tr>
+    <tr>
+        <td>
+            <div>
+                <canvas id='myCanvas' width="400px" height="400px" style="border:1px solid #000000;">
+                </canvas>
+            </div>
+        </td>
+        <td>
+            <div>
+                <div id="my3dCanvas"/>
+            </div>
+        </td>
+    </tr>
+    </table>
+    </body>
+    <script src="./src/3dtree.js"></script>
+    <script src="./src/2dtree.js"></script>
+    <script src="./src/main.js"></script>
+</html>
